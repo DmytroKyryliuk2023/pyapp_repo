@@ -4,6 +4,7 @@ def count(str1: str) -> int:
 def main():
     str1: str = "Aboba"
     print(count(str1))
+    print("Hello from main")
 
 if __name__ == "__main__":
     main()
