@@ -1,11 +1,8 @@
-def count(str1: str) -> int:
-    return len(str1)
+import random
 
 def main():
-    str1: str = "Aboba"
-    print(count(str1))
-    print("Hello from another-branch")
-    print("Hello from main")
+    thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+    print(thistuple[-4:])
 
 if __name__ == "__main__":
     main()
