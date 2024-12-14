@@ -1,10 +1,24 @@
-import random
+# import random
+
+LIST = [1, 3, 4, 5, 6]
+
+def insert(pos: int, value) -> None:
+    LIST.append(None)
+    n = len(LIST)
+
+    # rotate the elements to the right
+    for i in range(n - 1, pos, -1):
+        LIST[i] = LIST[i - 1]
+
+    LIST[pos] = value
 
 def main():
-    list1 = [random.randint(1, 10) for i in range(10)]
-    list2 = [random.randint(1, 10) for i in range(10)]
-    list3 = list1 + list2
-    print(list3)
+    print(LIST)
+    insert(1, 2)
+    print(LIST)
+    LIST.pop()
+    print(LIST)
+
 
 if __name__ == "__main__":
     main()
